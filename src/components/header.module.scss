@@ -1,0 +1,15 @@
+.header {
+    &--title {
+        text-decoration: none;
+    }
+
+    &--nav-list {
+        display: flex;
+        list-style-type: none;
+        
+        &--nav-link {
+            text-decoration: none;
+            margin-right: 1rem;
+        }
+    }
+}

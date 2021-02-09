@@ -2,14 +2,14 @@ import React from 'react'
 
 import Layout from '../components/layout'
 
-const IndexPage = () => {
+const ContactPage = () => {
     return (
         <div>
             <Layout>
-                Index Page
+                Contact
             </Layout>
         </div>
     )
 }
 
-export default IndexPage
+export default ContactPage
