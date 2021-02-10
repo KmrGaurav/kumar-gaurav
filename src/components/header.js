@@ -8,21 +8,21 @@ const Header = () => {
         <div>
             <header className={headerStyles.header}>
                 <h1>
-                    <Link to="/" className={headerStyles['headerTitle']}>Kumar Gaurav</Link>
+                    <Link to="/" className={headerStyles['headerTitle']}>KUMAR GAURAV</Link>
                 </h1>
-                <nav>
+                <nav className={headerStyles['headerNav']}>
                     <ul className={headerStyles['headerNavList']}>
                         <li>
-                            <Link to="/" className={headerStyles['headerNavListNavLink']}>Home</Link>
+                            <Link to="/" className={headerStyles['headerNavListLink']} activeClassName={headerStyles['headerNavListActivelink']}>Home</Link>
                         </li>
                         <li>
-                            <Link to="/blog" className={headerStyles['headerNavListNavLink']}>Blog</Link>
+                            <Link to="/blog" className={headerStyles['headerNavListLink']} activeClassName={headerStyles['headerNavListActivelink']}>Blog</Link>
                         </li>
                         <li>
-                            <Link to="/about" className={headerStyles['headerNavListNavLink']}>About</Link>
+                            <Link to="/about" className={headerStyles['headerNavListLink']} activeClassName={headerStyles['headerNavListActivelink']}>About</Link>
                         </li>
                         <li>
-                            <Link to="/contact" className={headerStyles['headerNavListNavLink']}>Contact</Link>
+                            <Link to="/contact" className={headerStyles['headerNavListLink']} activeClassName={headerStyles['headerNavListActivelink']}>Contact</Link>
                         </li>
                     </ul>
                 </nav>

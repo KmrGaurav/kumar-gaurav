@@ -1,15 +1,34 @@
+@import "../sass/variables";
+
 .header {
     &--title {
+        color: $color-primary;
         text-decoration: none;
+        font-size: 4rem;
     }
 
-    &--nav-list {
-        display: flex;
-        list-style-type: none;
-        
-        &--nav-link {
-            text-decoration: none;
-            margin-right: 1rem;
+    &--nav {
+        margin: 2rem 0;
+
+        &--list {
+            display: flex;
+            list-style-type: none;
+            
+            &--link {
+                color: $color-primary;
+                text-decoration: none;
+                margin-right: 2rem;
+    
+                font-size: 3rem;
+
+                &:hover {
+                    color: $color-primary-light;
+                }
+            }
+
+            &--activelink {
+                color: $color-primary-contrast;
+            }
         }
     }
 }

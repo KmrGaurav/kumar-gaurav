@@ -1,5 +1,6 @@
 import React from 'react'
 
+import '../sass/main.scss'
 import Layout from '../components/layout'
 
 const ContactPage = () => {

@@ -1,7 +1,15 @@
+@import "../sass/variables";
+
 .container {
-    margin: 0 auto;
+    margin: 2vh auto;
+    padding: 2rem;
     max-width: 1000px;
-    min-height: 100vh;
+    min-height: 96vh;
+    border-radius: 1.5rem;
+    border: 1rem solid $color-aluminium;
+    box-shadow: 1rem 1rem 2rem $color-grey;
+
+    background-color: $color-main;
 
     display: flex;
     flex-direction: column;
