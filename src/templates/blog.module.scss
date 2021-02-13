@@ -1,0 +1,21 @@
+@import '../sass/variables';
+
+::-webkit-scrollbar {display:none;}
+
+.blog {
+    padding: 1.2rem;
+    .title {
+        font-size: 4rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    .date {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .body {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+}
