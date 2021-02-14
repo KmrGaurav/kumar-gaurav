@@ -16,6 +16,9 @@ const Header = () => {
                             <Link to="/" className={headerStyles['headerNavListLink']} activeClassName={headerStyles['headerNavListActivelink']}>Home</Link>
                         </li>
                         <li>
+                            <Link to="/projects" className={headerStyles['headerNavListLink']} activeClassName={headerStyles['headerNavListActivelink']}>Projects</Link>
+                        </li>
+                        <li>
                             <Link to="/blog" className={headerStyles['headerNavListLink']} activeClassName={headerStyles['headerNavListActivelink']}>Blog</Link>
                         </li>
                         <li>

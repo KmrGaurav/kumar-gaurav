@@ -1,0 +1,65 @@
+@import '../sass/variables';
+
+::-webkit-scrollbar {display:none;}
+
+.project {
+    padding: 1.2rem;
+    &--name {
+        font-size: 4rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    &--description {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+    
+    &--live-demo-link {
+        display: flex;
+        color: inherit;
+        text-decoration: none;
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    &--live-sign {
+        padding: 1.2rem 0 1.2rem 1.2rem;
+        border-radius: .5rem;
+        color: white;
+        background-color: red;
+        font-size: 3rem;
+        font-family: sans-serif;
+        width: 14rem;
+    }
+
+    &--live-demo-name {
+        padding: 1.2rem 0 1.2rem 1.2rem;
+    }
+
+    &--live-demo-name:hover {
+        color: $color-primary-contrast;
+        font-weight: bold;
+    }
+
+    &--repo-title {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+        font-weight: bolder;
+    }
+    
+    &--repository-link {
+        color: inherit;
+        text-decoration: none;
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+    
+    &--repository-link:hover {
+        text-decoration: underline;
+    }
+
+    // .body {
+    //     font-size: 3rem;
+    //     line-height: 4rem;
+    // }
+}
