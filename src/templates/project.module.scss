@@ -23,17 +23,17 @@
     }
 
     &--live-sign {
-        padding: 1.2rem 0 1.2rem 1.2rem;
+        padding: 1.2rem;
         border-radius: .5rem;
         color: white;
         background-color: red;
         font-size: 3rem;
         font-family: sans-serif;
-        width: 14rem;
     }
 
     &--live-demo-name {
-        padding: 1.2rem 0 1.2rem 1.2rem;
+        padding: 1.2rem;
+        color: $color-primary-contrast;
     }
 
     &--live-demo-name:hover {
@@ -58,8 +58,36 @@
         text-decoration: underline;
     }
 
-    // .body {
-    //     font-size: 3rem;
-    //     line-height: 4rem;
-    // }
+    &--github-readme {
+        margin: 3rem 0;
+        font-size: 2rem;
+        line-height: 5rem;
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        h2 {
+            font-size: 3rem;
+        }
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        code {
+            background: $color-grey-light;
+            padding: .3rem .5rem;
+            border-radius: .5rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: $color-primary-contrast;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
 }

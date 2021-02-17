@@ -32,6 +32,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
                 edges {
                     node {
                         slug
+                        repositoryLink
                     }
                 }
             }
@@ -42,7 +43,8 @@ module.exports.createPages = async ({ graphql, actions }) => {
             component: projectTemplate,
             path: `/projects/${edge.node.slug}`,
             context: {
-                slug: edge.node.slug
+                slug: edge.node.slug,
+                title: path.basename(edge.node.repositoryLink, '.git')
             }
         })
     })

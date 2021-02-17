@@ -1,0 +1,19 @@
+diff --git a/node_modules/gatsby-source-gh-readme/gatsby-node.js b/node_modules/gatsby-source-gh-readme/gatsby-node.js
+index 498d8ec..524e81c 100644
+--- a/node_modules/gatsby-source-gh-readme/gatsby-node.js
++++ b/node_modules/gatsby-source-gh-readme/gatsby-node.js
+@@ -1,4 +1,4 @@
+-/* This GatsbyJS plugin queries GitHub's GraphQL API for a given user account. It fetches the README.md file at the root of the master branch of each repository and creates a MarkdownRemark node for each in GatsbyJS.
++/* This GatsbyJS plugin queries GitHub's GraphQL API for a given user account. It fetches the README.md file at the root of the main branch of each repository and creates a MarkdownRemark node for each in GatsbyJS.
+ 
+ Note - gatsby-transformer-remark must be implemented in the host GatsbyJS site in order for the markdown to be transpiled to HTML.
+  */
+@@ -58,7 +58,7 @@ exports.sourceNodes = (
+                 }
+                 homepageUrl
+                 description
+-                readme: object(expression: "master:README.md") {
++                readme: object(expression: "main:README.md") {
+                   ... on Blob {
+                     text
+                   }
