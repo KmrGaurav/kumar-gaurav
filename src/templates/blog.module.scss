@@ -4,18 +4,45 @@
 
 .blog {
     padding: 1.2rem;
-    .title {
+    
+    &--title {
         font-size: 4rem;
-        margin-bottom: 2.5rem;
+        line-height: 5rem;
     }
     
-    .date {
+    &--date {
         font-size: 2rem;
-        margin-bottom: 3rem;
+        margin-top: 2rem;
     }
 
-    .body {
+    &--description {
         font-size: 3rem;
+        margin-top: 2rem;
         line-height: 4rem;
+    }
+
+    hr {
+        margin-top: 2rem;
+    }
+
+    &--body {
+        font-size: 3rem;
+        line-height: 5rem;
+        margin: 3rem 0;
+
+        a {
+            color: $color-primary-contrast;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        code {
+            background: $color-grey-light;
+            padding: .3rem .5rem;
+            border-radius: .5rem;
+        }
     }
 }

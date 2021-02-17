@@ -14,6 +14,7 @@ const BlogPage = () => {
                         title
                         slug
                         publishedDate(formatString: "MMMM Do, YYYY")
+                        postDescription
                     }
                 }
             }
@@ -26,9 +27,10 @@ const BlogPage = () => {
                 <ol className={blogStyles.posts}>
                     {data.allContentfulBlogPost.edges.map((edge) => 
                         <li className={blogStyles.postsPost}>
-                            <Link to={edge.node.slug}>
+                            <Link to={edge.node.slug} className={blogStyles.postsPostLink}>
                                 <h2>{edge.node.title}</h2>
-                                <p>{edge.node.publishedDate}</p>
+                                <p className={blogStyles.postsPostLinkPublishedDate}>{edge.node.publishedDate}</p>
+                                <p className={blogStyles.postsPostLinkDescription}>{edge.node.postDescription}</p>
                             </Link>
                         </li>
                     )}
