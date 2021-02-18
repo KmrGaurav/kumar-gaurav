@@ -1,0 +1,16 @@
+@import "../sass/variables";
+
+.heading {
+    margin: 5rem 0;
+    font-size: 4rem;
+}
+
+.goback {
+    text-decoration: none;
+    font-size: 3rem;
+    color: $color-primary-contrast;
+}
+
+.goback:hover {
+    text-decoration: underline;
+}
