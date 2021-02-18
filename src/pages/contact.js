@@ -2,12 +2,15 @@ import React from 'react'
 
 import '../sass/main.scss'
 import contactStyles from './contact.module.scss'
+
+import Head from '../components/head'
 import Layout from '../components/layout'
 
 const ContactPage = () => {
     return (
         <div>
             <Layout>
+                <Head title="Contact" />
                 <div className={contactStyles.body}>
                     <p className={contactStyles.heading}>Get in touch</p>
                     <a className={contactStyles.email} href="mailto:kmrgrv119@gmail.com">Email</a>

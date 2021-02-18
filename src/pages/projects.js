@@ -3,6 +3,8 @@ import { Link, graphql, useStaticQuery } from 'gatsby'
 
 import '../sass/main.scss'
 import projectsStyles from './projects.module.scss'
+
+import Head from '../components/head'
 import Layout from '../components/layout'
 
 const ProjectsPage = () => {
@@ -23,6 +25,7 @@ const ProjectsPage = () => {
     return (
         <div>
             <Layout>
+                <Head title="Projects" />
                 <ol className={projectsStyles.list}>
                     {data.allContentfulProject.edges.map((edge) => 
                         <li className={projectsStyles.listItem}>

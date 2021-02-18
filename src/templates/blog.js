@@ -2,8 +2,10 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 
-import Layout from '../components/layout'
 import blogStyles from './blog.module.scss'
+
+import Head from '../components/head'
+import Layout from '../components/layout'
 
 export const query = graphql`
     query ($slug: String!) {
@@ -22,6 +24,7 @@ const Blog = (props) => {
     return (
         <div>
             <Layout>
+                <Head title={props.data.contentfulBlogPost.title} />
                 <div className={blogStyles.blog}>
                     <h1 className={blogStyles.blogTitle      }>{props.data.contentfulBlogPost.title}</h1>
                      <p className={blogStyles.blogDate       }>{props.data.contentfulBlogPost.publishedDate}</p>

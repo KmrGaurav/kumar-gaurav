@@ -3,6 +3,8 @@ import { Link, graphql, useStaticQuery } from 'gatsby'
 
 import '../sass/main.scss'
 import blogStyles from './blog.module.scss'
+
+import Head from '../components/head'
 import Layout from '../components/layout'
 
 const BlogPage = () => {
@@ -24,6 +26,7 @@ const BlogPage = () => {
     return (
         <div>
             <Layout>
+                <Head title="Blog" />
                 <ol className={blogStyles.posts}>
                     {data.allContentfulBlogPost.edges.map((edge) => 
                         <li className={blogStyles.postsPost}>

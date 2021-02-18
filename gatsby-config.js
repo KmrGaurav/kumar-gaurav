@@ -16,6 +16,7 @@ module.exports = {
             options: {
                 gitHubToken: `${process.env.GITHUB_API_TOKEN}`
             }
-        }
+        },
+        "gatsby-plugin-react-helmet"
     ]
 }

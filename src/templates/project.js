@@ -1,9 +1,10 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-// import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 
-import Layout from '../components/layout'
 import projectStyles from './project.module.scss'
+
+import Head from '../components/head'
+import Layout from '../components/layout'
 
 export const query = graphql`
     query ($slug: String!, $title: String!) {
@@ -25,6 +26,7 @@ const Project = (props) => {
     return (
         <div>
             <Layout>
+                <Head title={props.data.contentfulProject.projectName} />
                 <div className={projectStyles.project}>
                     <h1 className={projectStyles.projectName          }>{props.data.contentfulProject.projectName        }</h1>
                     <p  className={projectStyles.projectDescription   }>{props.data.contentfulProject.projectDescription }</p>
