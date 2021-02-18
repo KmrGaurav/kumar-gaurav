@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <div>
             <footer className={footerStyles.footer}>
-                Created by Kumar Gaurav
+                &copy; 2021 Kumar Gaurav. All Rights Reserved.
             </footer>
         </div>
     )

@@ -1,0 +1,41 @@
+@import "../sass/variables";
+
+.body {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.heading {
+    font-size: 4rem;
+    margin-top: 5rem;
+}
+
+.email {
+    display: inline-block;
+    margin-top: 2rem;
+
+    padding: 2rem;
+    color: $color-grey-light;
+    font-size: 4rem;
+    background: $color-grey;
+    text-decoration: none;
+}
+
+.social {
+    margin-top: 5rem;
+    font-size: 4rem;
+    
+    &--linkedin {
+        padding: 1rem;
+        color: $color-grey-light;
+        background: $color-linkedin;
+        text-decoration: none;
+    }
+
+    &--github {
+        padding: 1rem;
+        color: $color-grey-light;
+        background: $color-github;
+        text-decoration: none;
+    }
+}

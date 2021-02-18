@@ -1,0 +1,29 @@
+@import "../sass/variables";
+
+.body {
+    text-align: center;
+}
+
+.heading {
+    font-size: 4rem;
+    line-height: 5rem;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+
+.contactMe {
+    display: inline-block;
+
+    font-size: 3rem;
+    text-decoration: none;
+    color: $color-primary-contrast;
+    
+    border:3px solid $color-primary-contrast;
+    padding: 1.2rem;
+    border-radius: .5rem;
+}
+
+.contactMe:hover {
+    color: $color-main;
+    background-color: $color-primary-contrast;
+}

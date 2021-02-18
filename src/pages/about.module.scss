@@ -1,0 +1,33 @@
+@import "../sass/variables";
+
+.body {
+    padding: 1.2rem;
+    line-height: 5rem;
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 3rem;
+    }
+
+    a {
+        color: $color-primary-contrast;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    ol {
+        margin: 2rem 0;
+        list-style-type: disc;
+        margin-left: 2rem;
+    }
+
+    li {
+        font-size: 2rem;
+    }
+}
