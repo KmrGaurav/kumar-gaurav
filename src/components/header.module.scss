@@ -5,6 +5,7 @@
         color: $color-primary;
         text-decoration: none;
         font-size: 4rem;
+        line-height: 4rem;
     }
 
     &--nav {
@@ -28,6 +29,25 @@
 
             &--activelink {
                 color: $color-primary-contrast;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        &--title {
+            font-size: 3rem;
+            line-height: 3rem;
+        }
+        &--nav {
+            &--list {
+                flex-direction: column;
+                line-height: 3rem;
+
+                &--link {
+                    font-size: 2rem;
+                }
             }
         }
     }

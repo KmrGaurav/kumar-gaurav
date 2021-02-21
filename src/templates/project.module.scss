@@ -52,6 +52,8 @@
         text-decoration: none;
         font-size: 2rem;
         margin-bottom: 3rem;
+        white-space:pre-wrap;
+        word-break: break-word;
     }
     
     &--repository-link:hover {
@@ -83,15 +85,29 @@
             background: $color-grey-light;
             padding: .3rem .5rem;
             border-radius: .5rem;
+            white-space:pre-wrap;
+            word-break: break-word;
         }
 
         a {
             text-decoration: none;
             color: $color-primary-contrast;
+            white-space:pre-wrap;
+            word-break: break-word;
         }
 
         a:hover {
             text-decoration: underline;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .project {
+        padding: .8rem;
+        
+        &--name {
+            font-size: 3rem;
         }
     }
 }

@@ -43,6 +43,8 @@
             background: $color-grey-light;
             padding: .3rem .5rem;
             border-radius: .5rem;
+            white-space:pre-wrap;
+            word-break: break-word;
         }
     }
 }

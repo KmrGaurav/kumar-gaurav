@@ -15,7 +15,7 @@ const IndexPage = () => {
                 <div className={indexStyles.body}>
                     <p className={indexStyles.heading}>
                         Hi,<br />
-                        I’m Kumar Gaurav,<br />
+                        I’m Kumar&nbsp;Gaurav,<br />
                         Web Developer.
                     </p>
                     <Link to="/contact" className={indexStyles.contactMe}>Contact me</Link>

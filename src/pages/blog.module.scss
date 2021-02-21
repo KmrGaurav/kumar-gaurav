@@ -16,6 +16,7 @@
             h2 {
                 font-size: 3rem;
                 margin-bottom: 2rem;
+                line-height: 3rem;
             }
             
             &--published-date {
@@ -32,6 +33,19 @@
         
         a:hover {
             
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .posts {
+        &--post {
+            &--link {
+                h2 {
+                    font-size: 2rem;
+                    line-height: 2rem;
+                }
+            }
         }
     }
 }
