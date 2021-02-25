@@ -26,9 +26,13 @@
     }
 
     &--body {
-        font-size: 3rem;
+        font-size: 2.5rem;
         line-height: 5rem;
         margin: 3rem 0;
+
+        h1 {
+            font-size: 4rem;
+        }
 
         a {
             color: $color-primary-contrast;

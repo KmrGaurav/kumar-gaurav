@@ -37,6 +37,7 @@ const Project = (props) => {
                     <span className={projectStyles.projectRepoTitle}>Repository: </span>
                     <a  className={projectStyles.projectRepositoryLink} href={props.data.contentfulProject.repositoryLink} target="_blank" rel="noreferrer">{props.data.contentfulProject.repositoryLink}</a>
                     <hr />
+                    <p className={projectStyles.projectReadmeFromGithub}>README.md (fetching from github repository)</p>
                     <div className={projectStyles.projectGithubReadme} dangerouslySetInnerHTML={{ __html: props.data.githubReadme.childMarkdownRemark.html }}></div>
                 </div>
             </Layout>
